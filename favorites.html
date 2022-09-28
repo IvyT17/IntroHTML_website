@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites</title>
+    <style>
+        .header
+        {
+            text-align: center;
+            padding: 5px;
+            color: black;
+        }
+        
+        .hor-navbar a 
+		{
+		  color: black;
+          padding: 7px;
+		  text-decoration: none;
+          font-size: 25px;
+          font-family:Georgia, 'Times New Roman', Times, serif;
+		}
+        .hor-navbar
+        {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(255, 207, 228);
+            margin:-10px;
+        }
+        p
+        {
+            font-family: sans-serif;
+            font-size: 21px;
+            padding-left: 20px;
+        }
+        .container
+        {
+            display: flex;
+            justify-content: space-between;
+        }
+        .box
+        {
+            width: 450px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body style ='background-image: url(https://cdn.shopify.com/s/files/1/0361/5883/2778/files/Sports_wallpaper-03.jpg?v=1595400152); background-size: cover;'>
+    <div class = 'hor-navbar' >
+        <a class= 'active' href= 'index.html' >Home</a>
+        <a class= 'active' href= 'favorites.html' >Favorites</a>
+        <a class= 'active' href= 'skills.html' >Skills</a>
+        <a class= 'active' href= 'spots.html' >Spots</a>
+    </div>  
+    <header><h1 style = "font-family:'Times New Roman', Times, serif; text-align:center; font-weight:lighter; font-size: 35px; font-style: oblique; color: rgb(53, 147, 224);">My Favorite Things To Do</h1></header>
+        
+        <div class="container">
+            <div class="box" style="width:480px">
+                <header><h2 style="text-align:center; font-size: 25px">Dancing!</h2></header>
+                <p style="font-size: 19px; line-height: 30px;">One of my main hobbies is dancing. Here's a video:</p>
+                <video style = "padding-left: 150px;" width="180" height="320" controls src="vids/IvyTangDance1.mp4"></video>
+            </div>
+            <div class="box" style="width:480px">
+                <header><h3 style="text-align:center; font-size: 25px">Music</h3></header>
+                <ul>
+                    <li style="text-align:right; padding-right: 80px; font-size: 25px">I also play the violin and cello.</li>
+                </ul>
+                <p style="text-align:right; padding-right: 80px;">Here's one of my favorite pieces to play!</p>
+                <audio style= "padding-left: 80px; padding-top: 10px;" controls src="audios/Symphony15Mozart.mp3"></audio>
+                <!-- Remember to import the video/audio folders into VSC and make sure it's in the workspace! -->
+                <p style="text-align:right; padding-right: 55px;">Here's a link to the official recording:</p>
+                <iframe style= "padding-left: 100px; width:320px; height:180px;" src="https://www.youtube.com/embed/uanFK8FuCYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <br>
+                <img src="validationcheck.png" style="width: 320px; height: 50px; padding-left: 100px;">
+                ©
+            </div>
+        </div>
+</body>
+</html>
